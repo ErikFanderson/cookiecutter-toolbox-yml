@@ -1,0 +1,30 @@
+#------------------------------------------------------------------------------
+# Author: {{cookiecutter.author}}
+# Email: {{cookiecutter.email}}
+#------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
+# List of directories containing tools
+#------------------------------------------------------------------------------
+tools:
+#  - "${internal.env.PROJECT_HOME}/toolbox-cadence-tools/tcl_based/vlsi/vlsi"
+#------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
+# List of jobs
+#------------------------------------------------------------------------------
+jobs.build.tasks: [{tool: Make}]
+jobs.build.description: "Generates a Makefile w/ all jobs as targets"
+
+jobs.example.tasks: [{tool: ExampleTool, additional_configs: []}]
+jobs.example.description: "Example tool description"
+#------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
+# List of files and directories
+#------------------------------------------------------------------------------
+files.example_file_0: "/path/to/example/file_0"
+dirs.example_dir_0: "/path/to/example/dir_0/"
+filelists.example_filelist_0: []
+dirlists.example_dirlist_0: []
+#------------------------------------------------------------------------------
